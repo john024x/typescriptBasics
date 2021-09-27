@@ -18,7 +18,18 @@ userInfo = `
         Phone: ${phone}
         isPro: ${isPro}
 `;
-console.log('userInfo',userInfo);
+//Any
+let idUser:any;
+idUser = 1;//Number
+idUser = '1';
+//Void
+function showInfo(user:any): any{
+    console.log('User info',user.id,user.username,user.FirstName);
+    // return 1;
+}
+
+
+
 //Inferido
 let phoneNumber = 455;
 //Number
@@ -29,3 +40,28 @@ let octal: number = 0o744;
 let isUserPro = false;
 //String 
 let userName: String;
+let OtherId;
+OtherId = 1;
+OtherId = '1';
+//Any
+let surprise: any = 'Hi typescript'; //No se deberia usar
+const res = surprise.substring(6);
+//void
+function showFormatInfo(user:any){
+    console.log(`
+    User Info:
+        Username: ${user.id}
+        FirstName: ${user.username}
+        Phone: ${user.phoneNumber}
+        isPro: ${user.isUserPro}
+    `);
+}
+//Tipo: Never
+function handleError(code:number, message:string){
+
+        //Process your code here
+        //Generate a message
+        throw new Error(`${message}. Code: ${code}`);
+
+}
+handleError(404,'Not found');
