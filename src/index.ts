@@ -27,7 +27,13 @@ function showInfo(user:any): any{
     console.log('User info',user.id,user.username,user.FirstName);
     // return 1;
 }
-
+//null
+let nullVariable: null;
+//undefined
+let undefinedVariable: undefined = undefined;
+//Array Corchete
+let users: string[];
+users = ['1','2','3'];
 
 
 //Inferido
@@ -65,3 +71,23 @@ function handleError(code:number, message:string){
 
 }
 handleError(404,'Not found');
+//Array corchete
+let OtherUsers = ['1','2','3'];
+//<>
+let pictureTitles:Array<string>;
+pictureTitles = ['4','5','6'];
+
+//enum
+enum PhotoOrientation{
+    landscape,
+    portrait,
+    square
+}
+const landscape: PhotoOrientation = PhotoOrientation.portrait;
+
+enum PictureOrientationSecond{
+    landscape = 10,
+    portrait,
+    square
+
+}
