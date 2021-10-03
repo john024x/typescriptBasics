@@ -34,6 +34,8 @@ let undefinedVariable: undefined = undefined;
 //Array Corchete
 let users: string[];
 users = ['1','2','3'];
+//Union de tipos, alias y tipos literales
+
 
 
 //Inferido
@@ -89,5 +91,4 @@ enum PictureOrientationSecond{
     landscape = 10,
     portrait,
     square
-
 }
